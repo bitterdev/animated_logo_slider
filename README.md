@@ -1,0 +1,3 @@
+# Animated Logo Slider 
+
+The Animated Logo Slider add-on for Concrete CMS provides a sleek and dynamic way to showcase logos in a continuous scrolling strip. Designed as a custom template for the built-in Gallery block type, it transforms standard image galleries into animated logo carousels that loop endlessly. This makes it ideal for displaying partner logos, client brands, sponsors, or media mentions in a visually appealing and space-saving format. The animation runs smoothly across all devices, and the implementation is as simple as selecting the template when adding your gallery block. With its clean design and effortless setup, this add-on is a great enhancement for any professional website.
