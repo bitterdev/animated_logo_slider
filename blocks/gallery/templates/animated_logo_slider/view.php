@@ -16,7 +16,7 @@ $images = $images ?? [];
 if (!$images && $page && $page->isEditMode()) { ?>
     <div class="ccm-edit-mode-disabled-item">
         <?php
-        echo t('Empty Gallery Block.') ?>
+        echo t('Gallery Block is disabled in edit mode.') ?>
     </div>
     <?php
 
@@ -25,15 +25,17 @@ if (!$images && $page && $page->isEditMode()) { ?>
 }
 ?>
 
-<div class="logos" id="logoContainer">
-    <?php foreach ($images as $image) { ?>
-        <?php if ($image['file'] instanceof File) { ?>
-            <?php $fv = $image['file']->getApprovedVersion(); ?>
+<div class="logo-slider">
+    <div class="logos">
+        <?php foreach ($images as $image) { ?>
+            <?php if ($image['file'] instanceof File) { ?>
+                <?php $fv = $image['file']->getApprovedVersion(); ?>
 
-            <?php if ($fv instanceof Version) { ?>
-                <img class="image" src="<?php echo h($fv->getURL()); ?>"
-                     alt="<?php echo h($fv->getTitle()) ?>"/>
+                <?php if ($fv instanceof Version) { ?>
+                    <img class="image" src="<?php echo h($fv->getURL()); ?>"
+                         alt="<?php echo h($fv->getTitle()) ?>"/>
+                <?php } ?>
             <?php } ?>
         <?php } ?>
-    <?php } ?>
+    </div>
 </div>

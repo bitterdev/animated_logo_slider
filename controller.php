@@ -2,14 +2,12 @@
 
 namespace Concrete\Package\AnimatedLogoSlider;
 
-use Bitter\AnimatedLogoSlider\Provider\ServiceProvider;
-use Concrete\Core\Entity\Package as PackageEntity;
 use Concrete\Core\Package\Package;
 
 class Controller extends Package
 {
     protected string $pkgHandle = 'animated_logo_slider';
-    protected string $pkgVersion = '1.0.4';
+    protected string $pkgVersion = '0.0.1';
     protected $appVersionRequired = '9.0.0';
 
     public function getPackageDescription(): string
