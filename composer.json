@@ -1,0 +1,5 @@
+{
+  "name": "bitter/animated_logo_slider",
+  "type": "concrete5-package",
+  "description": "Display logos in a smooth, continuously looping animated strip using a gallery block template."
+}
